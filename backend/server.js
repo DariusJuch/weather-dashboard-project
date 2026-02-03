@@ -17,7 +17,7 @@ const db = new sqlite3.Database('./logs.db', (err) =>{
 });
 
 
-db.run(`CREATE TABLE IF NOT EXISTS city_logs(
+db.run(`CREATE TABLE IF NOT EXISTS activity_logs(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     city TEXT,
     timestamp TEXT
@@ -26,7 +26,7 @@ db.run(`CREATE TABLE IF NOT EXISTS city_logs(
 
 app.post('/api/log', (req, res) => {
 const { city, timestamp } = req.body;
-const sql = `INSERT INTO city_logs (city, timestamp) VALUES (?, ?)`;
+const sql = `INSERT INTO activity_logs (city, timestamp) VALUES (?, ?)`;
 
 db.run(sql, [city, timestamp], function(err) {
 if (err) {
