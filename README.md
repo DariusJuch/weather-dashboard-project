@@ -58,9 +58,9 @@ PORT=8080
 
 4. **Run the Application**:
 
-- **Start Backend: cd backend && npm start
+- Start Backend: cd backend && npm start
 
-- **Start Frontend: cd frontend && npm start
+- Start Frontend: cd frontend && npm start
 
 🐳 Docker Support
 You can also run the entire stack using Docker:
