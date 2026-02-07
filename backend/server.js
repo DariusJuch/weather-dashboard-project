@@ -38,6 +38,6 @@ res.status(200).json({ status: "success", id: this.lastID });
 });
 });
 
-app.listen(PORT, '0.0.0.0'() => {
+app.listen(PORT, '0.0.0.0', () => {
 console.log(`Server server is running on port ${PORT}`);
 });
