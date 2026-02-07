@@ -37,23 +37,26 @@ To run this project locally, follow these steps:
    ```bash
    git clone [https://github.com/DariusJuch/weather-dashboard-project.git](https://github.com/DariusJuch/weather-dashboard-project.git)
    cd weather-dashboard-project
-Install Dependencies:
+2. **Install Dependencies**:
 
 Backend:
 
 Bash
 cd backend
 npm install
+
 Frontend:
 
 Bash
 cd frontend
 npm install
-Environment Variables: Create a .env file in the backend folder and add your API key:
+
+3. **Environment Variables: Create a .env file in the backend folder and add your API key**:
 
 WEATHER_API_KEY=your_api_key_here
 PORT=8080
-Run the Application:
+
+4. **Run the Application**:
 
 Start Backend: cd backend && npm start
 
