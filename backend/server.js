@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const sqlite3 = require('sqlite3').verbose();
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 8080;
 
 app.use(cors());
 app.use(express.json);
@@ -38,6 +38,6 @@ res.status(200).json({ status: "success", id: this.lastID });
 });
 });
 
-app.listen(PORT, () => {
-console.log(`Backend server is running on http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0'() => {
+console.log(`Server server is running on port ${PORT}`);
 });
