@@ -76,8 +76,8 @@ docker run -p 8080:8080 weather-app
 Dockerfile: Configuration for cloud deployment.
 
 📝 Project Structure
-- /frontend: React application, components, and SASS styles.
+- Frontend: React application, components, and SASS styles.
 
-- /backend: Express server, SQLite configuration, and API routes.
+- Backend: Express server, SQLite configuration, and API routes.
 
 - Dockerfile: Configuration for cloud deployment.
