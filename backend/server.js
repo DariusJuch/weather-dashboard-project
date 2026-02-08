@@ -5,12 +5,12 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 app.use(cors());
-app.use(express.json());
+app.use(express.json);
 
 
 const db = new sqlite3.Database('tmp//logs.db', (err) =>{
     if (err){
-        conseole.error("Database connection error:" , err.message);
+        console.error("Database connection error:" , err.message);
     } else {
         console.log("Connected to the SQLite database.");
     }
